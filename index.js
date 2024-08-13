@@ -25,7 +25,7 @@ app.use("/videoDl", videoDlRoutes);
 app.use("/audioDl", audioDlRoutes);
 app.use("/search", searchRoutes);
 
-const PORT = 3001;
+const PORT = 3004;
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

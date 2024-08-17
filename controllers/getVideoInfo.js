@@ -1,7 +1,11 @@
 import getVideo from "../libs/getVideo.js";
+import { Client } from "youtubei";
 
 const getVideoInfo = async (req, res) => {
+  const youtube = new Client();
+
   const youtubeUrl = req.body.url;
+
   let videoId;
 
   // Regular expression to extract the video ID

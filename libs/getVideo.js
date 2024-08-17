@@ -38,7 +38,7 @@ const getVideo = async (url) => {
       id: videoInfo.basic_info.id,
     };
     console.log(video);
-    return { videoInfo };
+    return { video };
   } catch (error) {
     console.log("error:", error);
   }
